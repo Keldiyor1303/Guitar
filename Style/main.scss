@@ -20,11 +20,13 @@ body {
 }
 
 .line {
+    display: inline-block;
     width: 80px;
     height: 0;
     border: 3px solid #AB0433;
     background-color: #AB0433;
     margin-top: 88px;
+    text-align: center;
 }
 
 .h-2-primary {

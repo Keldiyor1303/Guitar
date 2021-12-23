@@ -7,19 +7,20 @@
 
     .top{
         width: 100%;
-        padding: 0 88px;
+        padding: 0 88px; 
+        
         .nav-1{
-            background-image: url(/Assets/images/bg-img-2.png);
-            background-position: center;
-            background-size: cover;
             width: 100%;
             height: 280px;
+            background-image: url(../../Assets/images/bg-img-2.jpg);
+            background-position: center;
+            background-size: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 45px 0;
             position: relative;
-            top: -130px;
+            top: -140px;
             border-radius: 10px;
     
             h2{
@@ -44,15 +45,20 @@
     
         .nav-2{
             @include display(flex, column, none, center, 20px);
-            margin-top: -130px;
+            margin-top: -140px;
+            width: 100%;
+            height: 650px;
     
             .products{
-                @include display(flex, row, none, none, 30px);
+                margin-top: 30px;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 252px;
+                gap: 32px;
     
                 .product{
                     .product-image{
-                        width: 400px;
-                        height: 252px;
                         background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
                         border-radius: 10px 10px 0px 0px;
     
@@ -64,7 +70,6 @@
                 }
     
                 .product-name{
-                    width: 400px;
                     height: 140px;
                     padding: 16px 24px;
                     background: #f8f4f4;
@@ -92,6 +97,7 @@
                         background-color: transparent;
                         border: 1px solid gray;
                         border-radius: 10px;
+                        cursor: pointer;
                     }
                 }
             }
@@ -100,20 +106,28 @@
 
     .bottom{
         margin-top: 88px;
-        padding-bottom: 88px;
-        @include display(flex, column, none, center, 20px);
+        padding: 0 88px;
+        padding-bottom: 88px;       
         background-color: #ECECEC;
         width: 100%;
+        text-align: center;
+
+        h2 {
+            margin-top: 16px;
+        }
 
         .products{
-            @include display(flex, row, none, none, 30px);
+            // @include display(flex, row, none, none, 30px);
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 392px; 
+            gap: 30px;
+            margin-top: 40px;
 
             .product{
                 width: 100%;
                 
-                .product-image{
-                    width: 400px;
-                    height: 252px;
+                .product-image{        
                     background: radial-gradient(98.56% 98.92% at 1.22% 1.08%, #FBFBFB 0%, #D3D3D3 100%);
                     border-radius: 10px 10px 0px 0px;
                     display: flex;
@@ -123,16 +137,11 @@
             }
 
             .product-name{
-                width: 400px;
-                height: 140px;
                 padding: 16px 24px;
                 background: #f8f4f4;
                 border-radius: 0px 0px 10px 10px;
-                flex: none;
-                order: 1;
-                align-self: stretch;
-                flex-grow: 0;
                 margin: 0px 0px;
+                text-align: start;
 
 
                 .price{
@@ -151,6 +160,7 @@
                     background-color: transparent;
                     border: 1px solid gray;
                     border-radius: 10px;
+                    cursor: pointer;
                 }
             }
         }
