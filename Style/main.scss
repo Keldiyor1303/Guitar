@@ -18,3 +18,15 @@ body {
         padding: 0 88px;
     }
 }
+
+.line {
+    width: 80px;
+    height: 0;
+    border: 3px solid #AB0433;
+    background-color: #AB0433;
+    margin-top: 88px;
+}
+
+.h-2-primary {
+    @include feature(700, 40px, 48px, #505050);
+}
