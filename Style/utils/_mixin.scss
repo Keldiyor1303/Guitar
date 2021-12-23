@@ -1,0 +1,18 @@
+// display
+
+@mixin display($display: flex, $flex-direction: row, $justify-content: center, $align-items: center, $gap: 0px) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+// matn xususiyatlari
+
+@mixin feature($font-weight: 500, $font-size: 16px, $line-height: 21px, $color: white) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
