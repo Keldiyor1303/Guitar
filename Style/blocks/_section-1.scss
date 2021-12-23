@@ -1,0 +1,30 @@
+.section-1{
+    background-image: url(/Assets/images/bg-img.png);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 40px 88px;
+
+    header{
+        @include display(flex, row, space-between, center, none);
+        height: 100px;
+
+        .nav-1{
+            @include display(flex, row, none, center, 60px);
+
+            a{
+                @include feature(600, 18px, 130%, white);
+                text-decoration: none;
+            }
+        }
+
+        .nav-2{
+            @include display(flex, row, none, center, 20px);
+        }
+    }
+
+    h1{
+        @include feature(700, 56px, 75px, white);
+        margin-top: 150px;
+    }
+}
