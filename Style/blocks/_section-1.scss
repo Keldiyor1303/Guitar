@@ -15,6 +15,11 @@
             a{
                 @include feature(600, 18px, 130%, white);
                 text-decoration: none;
+                transition: 0.5s;
+
+                &:hover {
+                    color: #505050;
+                }
             }
         }
 

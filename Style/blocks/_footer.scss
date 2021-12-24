@@ -1,0 +1,57 @@
+footer {
+    width: 100%;
+    height: 324px;
+    margin-top: 91px;
+
+    .top {
+        height: 290px;
+        background: #505050;
+        // transform: matrix(1, 0, 0, -1, 0, 0);
+        padding: 69px 51px 86px 100px;
+        @include display($justify-content: space-between, $align-items: flex-end);
+        color: white;
+
+        .left {
+            @include display($gap: 48px);
+
+            div {
+                @include display($flex-direction: column, $align-items: none, $gap: 9px);
+
+                span {
+                    width: 58px;
+                    height: 0;
+                    border: 2px solid #FFFFFF;
+                    background-color: #FFFFFF;
+                }
+
+                h4 {
+                    @include feature(700, 14px, 18px)
+                }
+
+                p {
+                    @include feature(400, 14px, 18px)
+                }
+            }
+        }
+
+        .right {
+            @include display($gap: 27px, $flex-direction: column, $align-items: flex-end);
+
+            .icons {
+                @include display($gap: 12px);
+            }
+        }
+
+
+    }
+
+    .bottom {
+        height: 34px;
+        background: #252525;
+        padding: 8px 8px 8px 100px;
+
+        p {
+            @include feature($font-weight: 400, $font-size: 13px, $line-height: 18px);
+        }
+    }
+}
